@@ -204,7 +204,5 @@ This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) 
 
 ---
 
-<div align="center">
- **Made with love ❤️ by [BlackBirdo](https://blackbirdo.com)**
-</div>
+**Made with love ❤️ by [BlackBirdo](https://blackbirdo.com)**
 
