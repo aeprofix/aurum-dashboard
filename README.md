@@ -88,7 +88,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/aurum-dashboard.git
+git clone https://github.com/ICodingStack/aurum-dashboard.git
 cd aurum-dashboard
 
 # 2. Install dependencies
@@ -205,6 +205,6 @@ This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) 
 ---
 
 <div align="center">
-  <p>Built with ❤️ and obsessive attention to detail.</p>
-  <p><strong>Star ⭐ this repo if you found it useful!</strong></p>
+ **Made with love ❤️ by [BlackBirdo](https://blackbirdo.com)**
 </div>
+
