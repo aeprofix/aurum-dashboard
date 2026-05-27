@@ -13,5 +13,43 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Import Firebase SDK -->
+<script type="module">
+  // Import fungsi Firebase
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+  // PASTE kod firebaseConfig kau di sini
+  const firebaseConfig = {
+    apiKey: "KOD_RAHSIA_KAU",
+    authDomain: "aeprofix-rms.firebaseapp.com",
+    projectId: "aeprofix-rms",
+    storageBucket: "aeprofix-rms.appspot.com",
+    messagingSenderId: "123456789",
+    appId: "1:123456789:web:abcdefg"
+  };
+
+  // Mulakan Firebase & Firestore
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Contoh fungsi untuk simpan rekod baiki phone
+  window.simpanRekod = async function() {
+    try {
+      const docRef = await addDoc(collection(db, "rekod_pelanggan"), {
+        nama: "Ali",
+        modelPhone: "iPhone 13",
+        jenisKerosakan: "FRP Bypass",
+        harga: 150,
+        tarikh: new Date()
+      });
+      alert("Rekod berjaya disimpan dengan ID: " + docRef.id);
+    } catch (e) {
+      console.error("Ralat menambah rekod: ", e);
+    }
+  };
+</script>
+
   </body>
 </html>
